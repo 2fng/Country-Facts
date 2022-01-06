@@ -58,7 +58,7 @@ class ViewController: UITableViewController {
                 do {
                     let result = try decoder.decode([Country].self, from: data!)
                     self!.countries += result
-                    print(self!.countries)
+                    //print(self!.countries)
                     DispatchQueue.main.async {
                         self!.tableView.reloadData()
                     }
