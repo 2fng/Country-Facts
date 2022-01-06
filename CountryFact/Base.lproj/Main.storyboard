@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,6 +46,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWi-NX-aZt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="955.07246376811599" y="50.892857142857139"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="aJb-tT-Rcb">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="TsT-pu-Iuf" customClass="DetailViewController" customModule="CountryFact" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UGH-MW-AHg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqC-DS-RnS">
+                                <rect key="frame" x="20" y="64" width="374" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSa-Uf-7i0">
+                                <rect key="frame" x="20" y="114" width="374" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VA4-Uv-NN1">
+                                <rect key="frame" x="20" y="164" width="374" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgE-PW-T2i">
+                                <rect key="frame" x="20" y="264" width="374" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcw-iM-aAN">
+                                <rect key="frame" x="20" y="214" width="374" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Obm-GN-xig"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VA4-Uv-NN1" firstAttribute="leading" secondItem="Obm-GN-xig" secondAttribute="leading" constant="20" id="3S3-Dd-ILp"/>
+                            <constraint firstItem="VA4-Uv-NN1" firstAttribute="top" secondItem="FSa-Uf-7i0" secondAttribute="bottom" constant="20" id="9vY-VX-qD3"/>
+                            <constraint firstItem="Obm-GN-xig" firstAttribute="trailing" secondItem="pcw-iM-aAN" secondAttribute="trailing" constant="20" id="Cy5-D7-V1a"/>
+                            <constraint firstItem="pcw-iM-aAN" firstAttribute="leading" secondItem="Obm-GN-xig" secondAttribute="leading" constant="20" id="KWN-lg-f9Z"/>
+                            <constraint firstItem="pcw-iM-aAN" firstAttribute="top" secondItem="VA4-Uv-NN1" secondAttribute="bottom" constant="20" id="LgN-bf-uSo"/>
+                            <constraint firstItem="SgE-PW-T2i" firstAttribute="leading" secondItem="Obm-GN-xig" secondAttribute="leading" constant="20" id="NqX-Vn-QZo"/>
+                            <constraint firstItem="vqC-DS-RnS" firstAttribute="top" secondItem="Obm-GN-xig" secondAttribute="top" constant="20" id="PQG-zk-ndJ"/>
+                            <constraint firstItem="FSa-Uf-7i0" firstAttribute="leading" secondItem="Obm-GN-xig" secondAttribute="leading" constant="20" id="a3J-Px-BQJ"/>
+                            <constraint firstItem="vqC-DS-RnS" firstAttribute="leading" secondItem="Obm-GN-xig" secondAttribute="leading" constant="20" id="b8S-hS-D5R"/>
+                            <constraint firstItem="Obm-GN-xig" firstAttribute="trailing" secondItem="vqC-DS-RnS" secondAttribute="trailing" constant="20" id="hiC-Fw-1SD"/>
+                            <constraint firstItem="Obm-GN-xig" firstAttribute="trailing" secondItem="FSa-Uf-7i0" secondAttribute="trailing" constant="20" id="l0u-TZ-B8l"/>
+                            <constraint firstItem="Obm-GN-xig" firstAttribute="trailing" secondItem="VA4-Uv-NN1" secondAttribute="trailing" constant="20" id="oc9-qH-eeN"/>
+                            <constraint firstItem="Obm-GN-xig" firstAttribute="trailing" secondItem="SgE-PW-T2i" secondAttribute="trailing" constant="20" id="qNu-uY-nyh"/>
+                            <constraint firstItem="SgE-PW-T2i" firstAttribute="top" secondItem="pcw-iM-aAN" secondAttribute="bottom" constant="20" id="suJ-gj-ZCV"/>
+                            <constraint firstItem="FSa-Uf-7i0" firstAttribute="top" secondItem="vqC-DS-RnS" secondAttribute="bottom" constant="20" id="y2z-xN-Pkr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="areaLabel" destination="pcw-iM-aAN" id="Xwk-Zw-KCl"/>
+                        <outlet property="capitalLabel" destination="FSa-Uf-7i0" id="vXY-rt-DuR"/>
+                        <outlet property="countryNameLabel" destination="vqC-DS-RnS" id="Sab-5F-C5I"/>
+                        <outlet property="currencyLabel" destination="SgE-PW-T2i" id="prY-cC-MwO"/>
+                        <outlet property="populationLabel" destination="VA4-Uv-NN1" id="lAV-Mv-ubg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lf5-aY-2m7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896" y="51"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2hz-p9-MuJ">

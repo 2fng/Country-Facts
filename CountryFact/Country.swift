@@ -10,11 +10,14 @@ import Foundation
 struct Country: Codable {
     var name: String
     var capital: String
-    //var currencies: [String: String]
-    //var population: Int
+    var population: Int
+    var area: Double?
+    var currencies: [Currency]
     
-//    init(name: String, capital: String) {
-//        self.name = name
-//        self.capital = capital
-//    }
+}
+
+struct Currency: Codable {
+    var symbol: String
+    var code: String
+    var name: String
 }
